@@ -8,9 +8,10 @@
  * 
  */
 
-//  1 - Studente
 $(document).ready(function (){
     
+    //  1 - Studente
+
     var studente = {
         nome: 'Ivan',
         cognome: 'Del Fatti',
@@ -21,4 +22,34 @@ $(document).ready(function (){
         console.log(studente[key]);
     }
 
+    // 2 - Array di oggetti di studenti
+
+    var studenti = [
+        {
+            nome: 'Luca',
+            cognome: 'Bianchi',
+            eta: '43',
+        },
+        {
+            nome: 'Brambilla',
+            cognome: 'Fumagalli',
+            eta: '32',
+        },
+        {
+            nome: 'Marco',
+            cognome: 'Girola',
+            eta: '28',
+        },
+        {
+            nome: 'Ajeje',
+            cognome: 'Brazorf',
+            eta: '55',
+        },
+    ]
+
+    for ( i = 0; i < studenti.length; i++ ) {
+        console.log(studenti[i].nome, studenti[i].cognome);
+    }
+
 }); // END DOC. READY
+
