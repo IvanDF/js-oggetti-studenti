@@ -19,7 +19,7 @@ $(document).ready(function (){
     };
     
     for ( var key in studente ) {
-        console.log(studente[key]);
+        console.log( 'Esercizio 1: ', studente[key]);
     }
 
     // 2 - Array di oggetti di studenti
@@ -48,10 +48,10 @@ $(document).ready(function (){
     ]
 
     for ( var i = 0; i < studenti.length; i++ ) {
-        console.log(studenti[i].nome, studenti[i].cognome);
+        console.log('Esercizio 2: ', studenti[i].nome, studenti[i].cognome);
     }
 
-    // 2 - Array di oggetti di studenti
+    // 3 - Inserire il nuovo studente nella lista di oggetti precedente
 
 
     var nomeUtente = prompt('Inserisci il tuo Nome')
@@ -60,12 +60,7 @@ $(document).ready(function (){
     
     studenti.push({nome:nomeUtente, cognome:cognomeUtente, eta:etaUtente})
 
-    // studenti.push(studente = {
-    //     nome: 'Ivan',
-    //     cognome: 'Del Fatti',
-    //     eta: '23',
-    // })
-    console.log(studenti);
+    console.log( 'Esercizio 3', studenti);
 
 
 }); // END DOC. READY
