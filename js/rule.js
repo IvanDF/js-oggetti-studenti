@@ -47,9 +47,26 @@ $(document).ready(function (){
         },
     ]
 
-    for ( i = 0; i < studenti.length; i++ ) {
+    for ( var i = 0; i < studenti.length; i++ ) {
         console.log(studenti[i].nome, studenti[i].cognome);
     }
+
+    // 2 - Array di oggetti di studenti
+
+
+    var nomeUtente = prompt('Inserisci il tuo Nome')
+    var cognomeUtente = prompt('Inserisci il tuo Cognome')
+    var etaUtente = prompt('Quanti anni hai')
+    
+    studenti.push({nome:nomeUtente, cognome:cognomeUtente, eta:etaUtente})
+
+    // studenti.push(studente = {
+    //     nome: 'Ivan',
+    //     cognome: 'Del Fatti',
+    //     eta: '23',
+    // })
+    console.log(studenti);
+
 
 }); // END DOC. READY
 
