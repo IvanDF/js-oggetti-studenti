@@ -3,3 +3,112 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    font-family: monospace;
+    background: linear-gradient(#06295d,#75d5a9);   
+}
+
+.box {
+    position: relative;
+    height: 100%;
+    border: solid 10px #0cd977;
+}
+
+/* TYPHOGRAPHY */
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    font-size: 98px;
+    line-height: 5px;
+    height: 40px;
+    color: #06295d;
+    background: #0cd977;
+}
+
+h3 {
+    padding: 8px 5px 0;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    font-size: 38px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: right;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+    color: #06295d;
+    background: #0cd977;
+}
+
+h3 span {
+    font-size: 33px;
+}
+
+/* BUTTON */
+
+.btn {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    padding: 10px 5px 10px 30px;
+    font-size: 28px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    color: #0cd977;
+    background: #06295d;
+    cursor: pointer;
+    transition: padding .7s ease-in,
+                        color .6s,
+                        background .8s ease-in;
+}
+
+.btn:hover {
+    padding-right: 25px;
+    color: #0cd977;
+    background: #06295d;
+}
+
+/* LISTA STUDENTI */
+.registro {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studenti {
+    width: 600px;
+    height: auto;
+}
+
+.studente {
+    list-style: none;
+    font-size: 28px;
+    border-bottom: 1px solid #06295d;
+}
+.studente .nome,
+.studente .cognome,
+.studente .eta {
+    color: #06295d;
+    display: inline-block;
+    width: 30%;
+}
+.studente .nome {
+    padding: 2px 20px;
+}
+.studente .cognome {
+    padding-left: 20px;
+}
+
+.studente .eta {
+    text-align: right;
+}
