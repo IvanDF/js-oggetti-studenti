@@ -14,20 +14,22 @@
         <h3>Registro classe 19 <br>
             <span>Nuovo studente?</span>
         </h3>
-        <a class="registrati btn">Registrati</a>
         <div class="registro">
-            <ul class="studenti"></ul>
+            <ul class="studenti">
+                <li class="studente">
+                    <span class="nome">Nome</span> 
+                    <span class="cognome"> Cognome </span> 
+                    <span class="eta">Etá</span>
+                </li>
+            </ul>
             </div>
         </div>
     </div>    
-
-
-
-
   
-        <script id="entry-template" type="text/x-handlebars-template">
-                    <li class="studente"><span class="nome">{{nome}}</span> <span class="cognome">{{cognome}}</span> <span class="eta">{{eta}}</span></li>
-          </script>
+    <!-- LAYOUT HANDLEBARS -->
+    <script id="entry-template" type="text/x-handlebars-template">
+        <li class="studente"><span class="nome">{{nome}}</span> <span class="cognome">{{cognome}}</span> <span class="eta">{{eta}}</span></li>
+    </script>
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

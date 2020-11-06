@@ -45,51 +45,22 @@ $(document).ready(function (){
             cognome: 'Brazorf',
             eta: '55',
         },
-        {
-            nome: 'Luca',
-            cognome: 'Bianchi',
-            eta: '43',
-        },
-        {
-            nome: 'Brambilla',
-            cognome: 'Fumagalli',
-            eta: '32',
-        },
-        {
-            nome: 'Marco',
-            cognome: 'Girola',
-            eta: '28',
-        },
-        {
-            nome: 'Ajeje',
-            cognome: 'Brazorf',
-            eta: '55',
-        },
-        {
-            nome: 'Luca',
-            cognome: 'Bianchi',
-            eta: '43',
-        },
-        {
-            nome: 'Brambilla',
-            cognome: 'Fumagalli',
-            eta: '32',
-        },
-        {
-            nome: 'Marco',
-            cognome: 'Girola',
-            eta: '28',
-        },
-        {
-            nome: 'Ajeje',
-            cognome: 'Brazorf',
-            eta: '55',
-        },
     ]
 
     // PROVA CON HANDLEBARS
     var source = $("#entry-template").html();
     var template = Handlebars.compile(source);
+
+      // 3 - Inserire il nuovo studente nella lista di oggetti precedente
+
+    var nomeUtente = prompt('Inserisci il tuo Nome')
+    var cognomeUtente = prompt('Inserisci il tuo Cognome')
+    var etaUtente = prompt('Quanti anni hai')
+    
+    studenti.push({nome:nomeUtente, cognome:cognomeUtente, eta:etaUtente});
+
+    console.log( 'Esercizio 3', studenti);
+    
 
     for ( var i = 0; i < studenti.length; i++ ) {
         console.log('Esercizio 2: ', studenti[i].nome, studenti[i].cognome);
@@ -100,21 +71,10 @@ $(document).ready(function (){
             nome: studenti[i].nome,
             eta: studenti[i].eta,
         };
-    
         var html = template(data);
         $('.studenti').append(html);
     }
 
-    // 3 - Inserire il nuovo studente nella lista di oggetti precedente
-    $('.registrati').click(function(){
-        var nomeUtente = prompt('Inserisci il tuo Nome')
-        var cognomeUtente = prompt('Inserisci il tuo Cognome')
-        var etaUtente = prompt('Quanti anni hai')
-        
-        studenti.push({nome:nomeUtente, cognome:cognomeUtente, eta:etaUtente})
-    
-        console.log( 'Esercizio 3', studenti);
-    })
 
 }); // END DOC. READY
 

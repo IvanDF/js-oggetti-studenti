@@ -7,13 +7,13 @@
 body {
     height: 100vh;
     font-family: monospace;
-    background: linear-gradient(#06295d,#75d5a9);   
+    background: linear-gradient(#06295d,#75d5a9);
+    border: solid 10px #0cd977;
 }
 
 .box {
-    position: relative;
     height: 100%;
-    border: solid 10px #0cd977;
+    overflow: auto;
 }
 
 /* TYPHOGRAPHY */
@@ -24,8 +24,8 @@ a {
 
 h2 {
     position: absolute;
-    bottom: 15px;
-    left: 0px;
+    bottom: 25px;
+    left: 10px;
     font-size: 98px;
     line-height: 5px;
     height: 40px;
@@ -36,8 +36,8 @@ h2 {
 h3 {
     padding: 8px 5px 0;
     position: absolute;
-    top: 15px;
-    right: 0px;
+    top: 25px;
+    right: 10px;
     font-size: 38px;
     line-height: 28px;
     text-transform: uppercase;
@@ -50,30 +50,6 @@ h3 {
 
 h3 span {
     font-size: 33px;
-}
-
-/* BUTTON */
-
-.btn {
-    position: absolute;
-    right: 0;
-    top: 100px;
-    padding: 10px 5px 10px 30px;
-    font-size: 28px;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    color: #0cd977;
-    background: #06295d;
-    cursor: pointer;
-    transition: padding .7s ease-in,
-                        color .6s,
-                        background .8s ease-in;
-}
-
-.btn:hover {
-    padding-right: 25px;
-    color: #0cd977;
-    background: #06295d;
 }
 
 /* LISTA STUDENTI */
@@ -94,6 +70,15 @@ h3 span {
     list-style: none;
     font-size: 28px;
     border-bottom: 1px solid #06295d;
+}
+
+.studente:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.studente:last-child {
+    border-bottom: none;
 }
 .studente .nome,
 .studente .cognome,
